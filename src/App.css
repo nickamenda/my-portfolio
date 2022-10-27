@@ -136,11 +136,48 @@ a:hover {
 .aboutMe {
   color: var(--green);
 }
-
+.aboutMe.container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
 .aboutMe.intro,
-.aboutMe.exp {
+.aboutMe.exp,
+.projects-container {
   color: var(--lightest-slate);
   max-width: 500px;
   font-size: 18px;
   line-height: 1.6;
 }
+.aboutMe.pic {
+  margin: auto;
+
+}
+.photo {
+  height: 215px;
+  width: 215px;
+  object-fit: cover; object-position: 0% 0%;
+}
+
+.projects-intro {
+  color: var(--lightest-slate);
+  max-width: 750px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.projects-container {
+  margin-top: 20px;
+  list-style: none;
+  font-size: 50px;
+}
+.projects-container ul {
+  margin: 0px;
+  padding-inline: 0px;
+}
+.projects-container p {
+  font-size: 20px;
+  line-height: 1.2;
+
+}
+
