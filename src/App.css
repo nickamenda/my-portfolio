@@ -1,38 +1,146 @@
+html {
+  background-color: var(--navy);
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
+  --green-tint: rgba(100, 255, 218, 0.1);
+  --pink: #f57dff;
+  --blue: #57cbff;
+}
 .App {
-  text-align: center;
+  padding: 0 40px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* .navbar div:hover {
+  transition: .1s ease-in;
+  font-size: 25px;
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  font-size: large;
+  margin-top: 5px;
+  color: var(--green);
+  gap: 25px;
+  margin: auto;
+  max-width: 750px;
+  min-height: 70vh;
+  box-sizing: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  color: var(--green);
+}
+
+.links section {
+  display: inline-flex;
+  margin-right: 3px;
+  color: var(--green);
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--light-slate);
+}
+
+.intro {
+  font-size: 25px;
+}
+
+.name {
+  color: var(--lightest-slate);
+  font-size: 65px;
+}
+
+.info {
+  color: var(--light-slate);
+  font-size: 55px;
+}
+
+.description p{
+  color: var(--light-slate);
+  padding: 0;
+  margin: 0;
+  max-width: 550px;
+}
+
+.navbar button {
+  color: var(--green);
+  padding: 10px 15px;
+  border-radius: 10%;
+  background-color: var(--navy);
+  border: 1px solid var(--green);
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+#aboutMe,
+#projects,
+#work,
+#contactMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 750px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.about section,
+.projects section,
+.work-experiences section,
+.contact section {
+  color: var(--green);
+}
+
+.about,
+.projects,
+.work-experiences,
+.contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--light-slate);
+}
+
+.aboutMe {
+  color: var(--green);
+}
+
+.aboutMe.intro,
+.aboutMe.exp {
+  color: var(--lightest-slate);
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.6;
 }
