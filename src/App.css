@@ -157,6 +157,7 @@ a:hover {
   height: 215px;
   width: 215px;
   object-fit: cover; object-position: 0% 0%;
+  border: 2px solid var(--lightest-slate);
 }
 
 .projects-intro {
@@ -167,17 +168,41 @@ a:hover {
 }
 
 .projects-container {
+  max-width: 750px;
   margin-top: 20px;
   list-style: none;
-  font-size: 50px;
+
+}
+.projects-container a {
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--green);
+  text-decoration: underline;
 }
 .projects-container ul {
   margin: 0px;
   padding-inline: 0px;
 }
 .projects-container p {
+  color: var(--lightest-slate);
   font-size: 20px;
   line-height: 1.2;
+}
 
+.sorting,
+.fec,
+.recastly,
+.csgo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+.sortingSS,
+.fecSS,
+.recastlySS,
+.csgoSS {
+  width: 215px;
+  height: 215px;
 }
 
