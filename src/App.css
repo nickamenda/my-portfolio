@@ -14,7 +14,26 @@ html {
   --green-tint: rgba(100, 255, 218, 0.1);
   --pink: #f57dff;
   --blue: #57cbff;
+  font-family: 'Roboto', sans-serif;
 }
+body {
+  animation: transistionIn 1.5s;
+}
+
+@keyframes transistionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 100;
+    transform: translateY(0px);
+
+  }
+}
+
+
 .App {
   padding: 0 40px;
 
@@ -27,10 +46,12 @@ html {
   justify-content: space-between;
 }
 
-/* .navbar div:hover {
+.navbar a:hover,
+.navbar button:hover,
+.logo:hover {
   transition: .1s ease-in;
   font-size: 25px;
-} */
+}
 
 .main {
   display: flex;
@@ -113,7 +134,7 @@ a:hover {
   align-items: flex-start;
   max-width: 750px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 .about section,
@@ -141,24 +162,20 @@ a:hover {
   flex-direction: row;
   gap: 100px;
 }
+.aboutMe.text {
+  max-width: 750px;
+}
 .aboutMe.intro,
 .aboutMe.exp,
 .projects-container {
   color: var(--lightest-slate);
-  max-width: 500px;
   font-size: 18px;
   line-height: 1.6;
 }
 .aboutMe.pic {
   margin: auto;
+}
 
-}
-.photo {
-  height: 215px;
-  width: 215px;
-  object-fit: cover; object-position: 0% 0%;
-  border: 2px solid var(--lightest-slate);
-}
 
 .projects-intro {
   color: var(--lightest-slate);
@@ -201,8 +218,16 @@ a:hover {
 .sortingSS,
 .fecSS,
 .recastlySS,
-.csgoSS {
+.csgoSS,
+.photo {
+  object-fit: cover;
   width: 215px;
   height: 215px;
+  border: 2px solid var(--light-slate);
 }
-
+.photo {
+  object-fit: cover; object-position: 0% 0%;
+}
+.fecSS {
+  object-fit: cover; object-position: 28%;
+}

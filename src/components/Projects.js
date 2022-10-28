@@ -1,4 +1,5 @@
 import sorting from '../Sorting.png'
+import fec from '../Fec.png'
 
 const Projects = () => {
   return (
@@ -14,10 +15,10 @@ const Projects = () => {
           </div>
         </ul>
         <ul>
-          <section><a href="#">Frontend Capstone</a></section>
+          <section><a href="https://nicks-fec-deploy-test.herokuapp.com/" target="_blank">Frontend Capstone</a></section>
           <div className="fec">
             <p>This is a 2-week project I also worked on while attending Hack Reactor's bootcamp. We were provided a wireframe of the site design and a business requirements document and were tasked with building the entire app from scratch and deploying it to AWS. I worked in a team of 3 and I took on the role of building out the product overview module which is the first thing you see when going to the site.</p>
-            <img src="#" className="fecSS"></img>
+            <img src={fec} className="fecSS"></img>
           </div>
         </ul>
         <ul>
