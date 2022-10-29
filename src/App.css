@@ -152,10 +152,33 @@ a:hover {
   align-items: center;
   gap: 5px;
   color: var(--light-slate);
+  font-size: 45px;
 }
 
 .aboutMe {
   color: var(--green);
+}
+.aboutMe.skills {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+}
+.aboutMe.skills img {
+  width: 85px;
+  height: auto;
+}
+
+.JS:hover img,
+.CSS:hover img,
+.HTML:hover img,
+.reactImg:hover img,
+.SQL:hover img,
+.Mongo:hover img {
+  cursor: pointer;
+  transition: ease .5s;
+  width: 120px;
+  height: auto;
+
 }
 .aboutMe.container {
   display: flex;
@@ -195,6 +218,13 @@ a:hover {
   font-weight: bold;
   color: var(--green);
   text-decoration: underline;
+}
+.projects-container a:hover {
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--green);
+  text-decoration: underline;
+  transition: .25s ease;
 }
 .projects-container ul {
   margin: 0px;

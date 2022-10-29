@@ -10,7 +10,6 @@ const AboutMe = () => {
       <div className="aboutMe exp"><p>I attended Hack Reactor bootcamp after teaching myself how to code in early 2022. Since learning to code I have worked on many different projects whether that be solo, with friends, with classmates, with strangers or in large groups. </p></div>
       </div>
       </div>
-
     </div>
   )
 }

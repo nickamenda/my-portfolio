@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="projects-intro"><p>While attending the Hack Reactor bootcamp, I worked on many different projects whether it be solo, in pairs or in larger groups of 3-4. I have also worked on quite a few personal projects. Below are some of the projects I have worked on, I would love for you to check them out!</p></div>
       <li className="projects-container">
         <ul>
-          <section><a href="#">Sorting Algorithm Visualizer</a></section>
+          <section><a href="https://nicks-sortingalgo.herokuapp.com/" target="_blank">Sorting Algorithm Visualizer</a></section>
           <div className="sorting">
             <p>This is a personal project I worked on with one of my good friends. This visualizer creates a visual depiction of 4 different sorting algorithms. We used a mix of HTML, CSS, and JS to build this visualizer. There are options to change the speed of the algorithm, input how many bars you want shown, and what algorithm you would like to see. Please, feel free to give it a try!</p>
             <img src={sorting} className="sortingSS"></img>
