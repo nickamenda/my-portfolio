@@ -1,3 +1,7 @@
+html,body {
+  overflow-x: hidden;
+}
+
 html {
   background-color: var(--navy);
   --dark-navy: #020c1b;
@@ -16,6 +20,7 @@ html {
   --blue: #57cbff;
   font-family: 'Roboto', sans-serif;
 }
+
 body {
   animation: transistionIn 1.5s;
 }
@@ -106,7 +111,7 @@ body {
   font-size: 55px;
 }
 
-.description p{
+.description p {
   color: var(--light-slate);
   padding: 0;
   margin: 0;
@@ -160,11 +165,13 @@ a:hover {
 .aboutMe {
   color: var(--green);
 }
+
 .aboutMe.skills {
   display: flex;
   gap: 20px;
   padding: 5px;
 }
+
 .aboutMe.skills img {
   width: 85px;
   height: auto;
@@ -184,14 +191,17 @@ a:hover {
   height: auto;
 
 }
+
 .aboutMe.container {
   display: flex;
   flex-direction: row;
   gap: 100px;
 }
+
 .aboutMe.text {
   max-width: 750px;
 }
+
 .aboutMe.intro,
 .aboutMe.exp,
 .projects-container {
@@ -199,6 +209,7 @@ a:hover {
   font-size: 18px;
   line-height: 1.6;
 }
+
 .aboutMe.pic {
   margin: auto;
 }
@@ -215,8 +226,8 @@ a:hover {
   max-width: 750px;
   margin-top: 20px;
   list-style: none;
-
 }
+
 .projects-container a {
   font-size: 38px;
   font-weight: bold;
@@ -224,6 +235,7 @@ a:hover {
   text-decoration: underline;
   transition: .5s ease;
 }
+
 .projects-container a:hover {
   font-size: 45px;
   font-weight: bold;
@@ -231,10 +243,12 @@ a:hover {
   text-decoration: underline;
   transition: .25s ease;
 }
+
 .projects-container ul {
   margin: 0px;
   padding-inline: 0px;
 }
+
 .projects-container p {
   color: var(--lightest-slate);
   font-size: 20px;
@@ -250,6 +264,7 @@ a:hover {
   align-items: center;
   gap: 100px;
 }
+
 .sortingSS,
 .fecSS,
 .recastlySS,
@@ -260,6 +275,7 @@ a:hover {
   height: 215px;
   border: 2px solid var(--light-slate);
 }
+
 .sortingSS:hover,
 .fecSS:hover,
 .recastlySS:hover,
@@ -268,17 +284,105 @@ a:hover {
   cursor: pointer;
   float: right;
 }
+
 .photo {
-  object-fit: cover; object-position: 0% 0%;
+  object-fit: cover;
+  object-position: 0% 0%;
 }
+
 .fecSS {
-  object-fit: cover; object-position: 28%;
+  object-fit: cover;
+  object-position: 28%;
 }
+
 .logo {
-width: 75px;
+  width: 75px;
 }
+
 .logo:hover {
   cursor: pointer;
   font-size: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+  .main {
+    align-items: center;
+  }
+
+  .aboutMe.skills {
+    flex-wrap: wrap;
+  }
+
+  #aboutMe,
+  #projects,
+  #work,
+  #contactMe {
+    margin: 10px;
+  }
+  .about,
+  .projects,
+  .work-experiences,
+  .contact {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .sorting,
+  .fec,
+  .recastly,
+  .csgo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .Mongo {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar button {
+    display: none;
+  }
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: flex;
+    color: var(--green);
+    font-size: 40px;
+  }
+  .logo {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+    display: flex;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+}
