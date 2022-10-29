@@ -79,6 +79,7 @@ body {
 
 .logo {
   color: var(--green);
+  transition: .5s ease;
 }
 
 .links section {
@@ -100,6 +101,7 @@ body {
 .name {
   color: var(--lightest-slate);
   font-size: 65px;
+  transition: .25s ease;
 }
 
 .info {
@@ -464,8 +466,18 @@ body {
 
   .logo:hover {
     cursor: pointer;
-    font-size: 40px;
+    transform: scale(1.5);
+
   }
+
+  .name:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transform-origin: 0%;
+    transition: .5s ease;
+    color: var(--green);
+  }
+
 
 }
 
