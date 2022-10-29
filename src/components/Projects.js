@@ -10,7 +10,7 @@ const Projects = () => {
       <li className="projects-container">
         <ul>
           <section><a href="https://nicks-sortingalgo.herokuapp.com/" target="_blank">Sorting Algorithm Visualizer</a>
-              <a href="https://github.com/nickamenda/SortingAlgorithm" target="_blank"><img className="github" src={Github}></img></a>
+              <a href="https://github.com/nickamenda/SortingAlgoVisual" target="_blank"><img className="github" src={Github}></img></a>
           </section>
           <div className="sorting">
             <p>This is a personal project I worked on with one of my good friends. This visualizer creates a visual depiction of 4 different sorting algorithms. We used a mix of HTML, CSS, and JS to build this visualizer. There are options to change the speed of the algorithm, input how many bars you want shown, and what algorithm you would like to see. Please, feel free to give it a try!</p>
