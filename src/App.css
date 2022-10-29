@@ -383,6 +383,10 @@ body {
   .logo {
     margin: 0px;
   }
+  .projects-container section img {
+    -webkit-filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
+    filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
+  }
 }
 
 @media screen and (max-width: 650px) {
