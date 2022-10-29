@@ -19,6 +19,7 @@ html {
   --pink: #f57dff;
   --blue: #57cbff;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
