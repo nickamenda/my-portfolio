@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -37,7 +38,6 @@ body {
     opacity: 100;
     transform: translateY(0px);
     filter: grayscale(0%);
-
   }
 }
 
@@ -122,8 +122,6 @@ body {
   border: 1px solid var(--green);
   transition: .5s ease;
 }
-
-
 
 #aboutMe,
 #projects,
@@ -210,7 +208,7 @@ body {
   list-style: none;
 }
 
-.projects-container section{
+.projects-container section {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -287,13 +285,16 @@ body {
 .icon {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 650px) {
   body {
     text-align: center;
   }
+
   img {
     margin: auto;
   }
+
   .main {
     align-items: center;
   }
@@ -310,6 +311,7 @@ body {
     margin: 10px;
     display: block;
   }
+
   .about,
   .projects,
   .work-experiences,
@@ -324,55 +326,64 @@ body {
   .csgo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     margin-bottom: 10px;
   }
+
   .icon {
     text-decoration: none;
   }
+
   .projects-container section {
     display: flex;
     gap: 15px;
     flex-direction: column;
-    margin: auto ;
+    margin: auto;
   }
+
   .projects-container section img {
-    margin: 0px ;
+    margin: 0px;
   }
+
   .projects-container a {
     font-size: 35px;
     color: var(--green);
   }
+
   .projects-container a:hover {
     font-size: 35px;
   }
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .navbar {
     justify-content: space-between;
     align-items: center;
   }
+
   .navbar button {
     display: none;
   }
+
   .navbar a {
     display: none;
   }
+
   .navbar a.icon {
     float: right;
     display: flex;
     color: var(--green);
     font-size: 40px;
   }
+
   .logo {
     margin: 0px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .navbar.responsive {
     position: relative;
     display: flex;
@@ -391,22 +402,27 @@ body {
     border: 1px solid var(--green);
     width: 75px;
   }
+
   .links.responsive a {
     display: flex;
   }
 }
-@media only screen and (min-width: 600px) {
+
+@media only screen and (min-width: 650px) {
+
   .navbar a:hover,
   .navbar button:hover,
   .logo:hover {
     transition: .5s ease-in;
     font-size: 25px;
   }
+
   button:hover,
   a:hover,
   img:hover {
     cursor: pointer;
   }
+
   .JS:hover img,
   .CSS:hover img,
   .HTML:hover img,
@@ -419,10 +435,14 @@ body {
     width: 120px;
     height: auto;
   }
+
   .projects-container section img:hover {
     transition: .5s ease;
-    border: 1.5px solid var(--green);
+    transform: scale(1.5);
+    -webkit-filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
+    filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
   }
+
   .projects-container a:hover {
     font-size: 45px;
     font-weight: bold;
@@ -430,6 +450,7 @@ body {
     text-decoration: underline;
     transition: .25s ease;
   }
+
   .sortingSS:hover,
   .fecSS:hover,
   .recastlySS:hover,
@@ -437,12 +458,19 @@ body {
   .photo:hover {
     cursor: pointer;
     float: right;
-    border: 2px solid var(--green);
-    transition: .5s ease;
+    transform: scale(1.25);
+    transition: .5s ease-in;
   }
+
   .logo:hover {
     cursor: pointer;
     font-size: 40px;
   }
 
+}
+
+@media screen and (max-width: 800px) {
+  .aboutMe.skills {
+    flex-wrap: wrap;
+  }
 }
