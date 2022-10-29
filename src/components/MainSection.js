@@ -4,6 +4,7 @@ import SQL from '../SQL.png'
 import Mongo from '../Mongo.png'
 import JS from '../JS.png'
 import HTML from '../HTML.png'
+import AWS from '../AWS.png'
 
 const MainSection = () => {
   return (
@@ -12,7 +13,7 @@ const MainSection = () => {
       <div className="name">Nick Amenda.</div>
       <div className="info">I create things for the web.</div>
       <div className="description"><p>I am a software engineer who specializes in building amazing every day experiences for people who use the internet! I truly enjoy making the internet seamless for the end-user.</p> </div>
-      <div>Over the course of a year I have learned many different skills and languages</div>
+      <div>Over the course of a year I have become proficient with many different skills and languages.</div>
       <div className="aboutMe skills">
         <div className="JS">
           <img src={JS}></img>
@@ -25,6 +26,9 @@ const MainSection = () => {
         </div>
         <div className="reactImg">
           <img src={reactImg}></img>
+        </div>
+        <div className="AWS">
+          <img src={AWS}></img>
         </div>
         <div className="SQL">
           <img src={SQL}></img>

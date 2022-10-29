@@ -1,8 +1,9 @@
+import logo from '../Logo.png'
 const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <div className="logo">Test</div>
+        <img className="logo" src={logo}></img>
         <div className="links">
           <a href="#aboutMe"><section>01.</section>About</a>
           <a href="#projects"><section>02.</section>Projects</a>

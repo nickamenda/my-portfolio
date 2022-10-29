@@ -24,11 +24,13 @@ body {
   from {
     opacity: 0;
     transform: translateY(-100px);
+    filter: grayscale(100%);
   }
 
   to {
     opacity: 100;
     transform: translateY(0px);
+    filter: grayscale(0%);
 
   }
 }
@@ -36,7 +38,6 @@ body {
 
 .App {
   padding: 0 40px;
-
 }
 
 .navbar {
@@ -88,6 +89,7 @@ body {
 .links a {
   text-decoration: none;
   color: var(--light-slate);
+  transition: .5s ease;
 }
 
 .intro {
@@ -166,6 +168,7 @@ a:hover {
 .aboutMe.skills img {
   width: 85px;
   height: auto;
+  transition: .5s ease;
 }
 
 .JS:hover img,
@@ -173,7 +176,8 @@ a:hover {
 .HTML:hover img,
 .reactImg:hover img,
 .SQL:hover img,
-.Mongo:hover img {
+.Mongo:hover img,
+.AWS:hover img {
   cursor: pointer;
   transition: ease .5s;
   width: 120px;
@@ -218,6 +222,7 @@ a:hover {
   font-weight: bold;
   color: var(--green);
   text-decoration: underline;
+  transition: .5s ease;
 }
 .projects-container a:hover {
   font-size: 45px;
@@ -255,9 +260,25 @@ a:hover {
   height: 215px;
   border: 2px solid var(--light-slate);
 }
+.sortingSS:hover,
+.fecSS:hover,
+.recastlySS:hover,
+.csgoSS:hover,
+.photo:hover {
+  cursor: pointer;
+  float: right;
+}
 .photo {
   object-fit: cover; object-position: 0% 0%;
 }
 .fecSS {
   object-fit: cover; object-position: 28%;
 }
+.logo {
+width: 75px;
+}
+.logo:hover {
+  cursor: pointer;
+  font-size: 40px;
+}
+
