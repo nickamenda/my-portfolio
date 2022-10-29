@@ -1,6 +1,6 @@
-import sorting from '../Sorting.png'
-import fec from '../Fec.png'
-import Github from '../Github.png'
+import sorting from '../resources/Sorting.png'
+import fec from '../resources/Fec.png'
+import Github from '../resources/Github.png'
 
 const Projects = () => {
   return (

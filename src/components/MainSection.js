@@ -1,10 +1,10 @@
-import CSS from '../CSS.png'
-import reactImg from '../ReactImg.png'
-import SQL from '../SQL.png'
-import Mongo from '../Mongo.png'
-import JS from '../JS.png'
-import HTML from '../HTML.png'
-import AWS from '../AWS.png'
+import CSS from '../resources/CSS.png'
+import reactImg from '../resources/ReactImg.png'
+import SQL from '../resources/SQL.png'
+import Mongo from '../resources/Mongo.png'
+import JS from '../resources/JS.png'
+import HTML from '../resources/HTML.png'
+import AWS from '../resources/AWS.png'
 
 const MainSection = () => {
   return (
@@ -16,25 +16,25 @@ const MainSection = () => {
       <div>Over the course of a year I have become proficient with many different skills and languages.</div>
       <div className="aboutMe skills">
         <div className="JS">
-          <img src={JS}></img>
+          <a href="https://www.javascript.com/" target="_blank"><img src={JS}></img></a>
         </div>
         <div className="CSS">
-          <img src={CSS}></img>
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src={CSS}></img></a>
         </div>
         <div className="HTML">
-          <img src={HTML}></img>
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src={HTML}></img></a>
         </div>
         <div className="reactImg">
-          <img src={reactImg}></img>
+          <a href="https://reactjs.org/" target="_blank"><img src={reactImg}></img></a>
         </div>
         <div className="AWS">
-          <img src={AWS}></img>
+          <a href="https://aws.amazon.com/" target="_blank"><img src={AWS}></img></a>
         </div>
         <div className="SQL">
-          <img src={SQL}></img>
+          <a href="https://www.mysql.com/" target="_blank"><img src={SQL}></img></a>
         </div>
         <div className="Mongo">
-          <img src={Mongo}></img>
+          <a href="https://www.mongodb.com/" target="_blank"><img src={Mongo}></img></a>
         </div>
       </div>
     </div>

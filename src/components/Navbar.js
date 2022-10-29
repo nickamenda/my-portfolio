@@ -1,4 +1,4 @@
-import logo from '../Logo.png'
+import logo from '../resources/Logo.png'
 import React, { useState } from 'react';
 import Modal from './Modal.js'
 
