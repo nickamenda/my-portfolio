@@ -3,7 +3,7 @@ html,body {
 }
 
 html {
-  background-color: var(--navy);
+  background-color: var(--light-navy);
   --dark-navy: #020c1b;
   --navy: #0a192f;
   --light-navy: #112240;
@@ -127,7 +127,8 @@ body {
 }
 
 button:hover,
-a:hover {
+a:hover,
+img:hover {
   cursor: pointer;
 }
 
@@ -228,10 +229,29 @@ a:hover {
   list-style: none;
 }
 
+.projects-container section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-container section img {
+  width: 45px;
+  height: auto;
+  margin-right: 80px;
+  padding: 4px;
+  transition: .5s ease;
+}
+
+.projects-container section img:hover {
+  transition: 1s ease;
+  border: 1.5px solid var(--green);
+}
+
 .projects-container a {
   font-size: 38px;
   font-weight: bold;
-  color: var(--green);
+  color: var(--lightest-slate);
   text-decoration: underline;
   transition: .5s ease;
 }
@@ -273,7 +293,8 @@ a:hover {
   object-fit: cover;
   width: 215px;
   height: 215px;
-  border: 2px solid var(--light-slate);
+  transition: .5s ease;
+
 }
 
 .sortingSS:hover,
@@ -283,6 +304,8 @@ a:hover {
 .photo:hover {
   cursor: pointer;
   float: right;
+  border: 2px solid var(--green);
+  transition: 1s ease;
 }
 
 .photo {
@@ -303,7 +326,9 @@ a:hover {
   cursor: pointer;
   font-size: 40px;
 }
-
+.icon {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   body {
     text-align: center;
@@ -324,6 +349,7 @@ a:hover {
   #work,
   #contactMe {
     margin: 10px;
+    display: block;
   }
   .about,
   .projects,
@@ -343,9 +369,19 @@ a:hover {
     gap: 10px;
     margin-bottom: 10px;
   }
-  .Mongo {
-    margin: auto;
+  .icon {
+    text-decoration: none;
   }
+  .projects-container section {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin: auto ;
+  }
+  .projects-container section img {
+    margin: 0px ;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -375,14 +411,20 @@ a:hover {
     position: relative;
     display: flex;
   }
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
+
+  .links.responsive {
     display: flex;
-    text-align: left;
     flex-direction: column;
+    background-color: var(--dark-navy);
+    padding: 20px;
+    position: relative;
+    left: 110px;
+    top: 135px;
+    gap: 25px;
+    transition: 1s ease;
+    border: 1px solid var(--green);
+  }
+  .links.responsive a {
+    display: flex;
   }
 }
