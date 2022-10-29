@@ -52,12 +52,7 @@ body {
   justify-content: space-between;
 }
 
-.navbar a:hover,
-.navbar button:hover,
-.logo:hover {
-  transition: .1s ease-in;
-  font-size: 25px;
-}
+
 
 .main {
   display: flex;
@@ -126,11 +121,7 @@ body {
   border: 1px solid var(--green);
 }
 
-button:hover,
-a:hover,
-img:hover {
-  cursor: pointer;
-}
+
 
 #aboutMe,
 #projects,
@@ -179,19 +170,7 @@ img:hover {
   transition: .5s ease;
 }
 
-.JS:hover img,
-.CSS:hover img,
-.HTML:hover img,
-.reactImg:hover img,
-.SQL:hover img,
-.Mongo:hover img,
-.AWS:hover img {
-  cursor: pointer;
-  transition: ease .5s;
-  width: 120px;
-  height: auto;
 
-}
 
 .aboutMe.container {
   display: flex;
@@ -240,13 +219,11 @@ img:hover {
   height: auto;
   margin-right: 80px;
   padding: 4px;
+  border: 0px;
   transition: .5s ease;
 }
 
-.projects-container section img:hover {
-  transition: 1s ease;
-  border: 1.5px solid var(--green);
-}
+
 
 .projects-container a {
   font-size: 38px;
@@ -254,14 +231,6 @@ img:hover {
   color: var(--lightest-slate);
   text-decoration: underline;
   transition: .5s ease;
-}
-
-.projects-container a:hover {
-  font-size: 45px;
-  font-weight: bold;
-  color: var(--green);
-  text-decoration: underline;
-  transition: .25s ease;
 }
 
 .projects-container ul {
@@ -294,19 +263,9 @@ img:hover {
   width: 215px;
   height: 215px;
   transition: .5s ease;
-
 }
 
-.sortingSS:hover,
-.fecSS:hover,
-.recastlySS:hover,
-.csgoSS:hover,
-.photo:hover {
-  cursor: pointer;
-  float: right;
-  border: 2px solid var(--green);
-  transition: 1s ease;
-}
+
 
 .photo {
   object-fit: cover;
@@ -322,10 +281,7 @@ img:hover {
   width: 75px;
 }
 
-.logo:hover {
-  cursor: pointer;
-  font-size: 40px;
-}
+
 .icon {
   display: none;
 }
@@ -342,6 +298,7 @@ img:hover {
 
   .aboutMe.skills {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   #aboutMe,
@@ -381,6 +338,13 @@ img:hover {
   .projects-container section img {
     margin: 0px ;
   }
+  .projects-container a {
+    font-size: 35px;
+    color: var(--green);
+  }
+  .projects-container a:hover {
+    font-size: 35px;
+  }
 
 }
 
@@ -417,14 +381,66 @@ img:hover {
     flex-direction: column;
     background-color: var(--dark-navy);
     padding: 20px;
-    position: relative;
-    left: 110px;
-    top: 135px;
-    gap: 25px;
-    transition: 1s ease;
+    position: absolute;
+    right: -38px;
+    top: 75px;
+    gap: 35px;
+    transition: .5s ease;
     border: 1px solid var(--green);
+    width: 75px;
   }
   .links.responsive a {
     display: flex;
   }
+}
+@media only screen and (min-width: 600px) {
+  .navbar a:hover,
+  .navbar button:hover,
+  .logo:hover {
+    transition: .5s ease-in;
+    font-size: 25px;
+  }
+  button:hover,
+  a:hover,
+  img:hover {
+    cursor: pointer;
+  }
+  .JS:hover img,
+  .CSS:hover img,
+  .HTML:hover img,
+  .reactImg:hover img,
+  .SQL:hover img,
+  .Mongo:hover img,
+  .AWS:hover img {
+    cursor: pointer;
+    transition: ease .5s;
+    width: 120px;
+    height: auto;
+  }
+  .projects-container section img:hover {
+    transition: .5s ease;
+    border: 1.5px solid var(--green);
+  }
+  .projects-container a:hover {
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--green);
+    text-decoration: underline;
+    transition: .25s ease;
+  }
+  .sortingSS:hover,
+  .fecSS:hover,
+  .recastlySS:hover,
+  .csgoSS:hover,
+  .photo:hover {
+    cursor: pointer;
+    float: right;
+    border: 2px solid var(--green);
+    transition: .5s ease;
+  }
+  .logo:hover {
+    cursor: pointer;
+    font-size: 40px;
+  }
+
 }

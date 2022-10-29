@@ -1,5 +1,9 @@
 import logo from '../Logo.png'
+import React, { useState } from 'react';
+import Modal from './Modal.js'
+
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false)
   const myFunction = () => {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
@@ -26,7 +30,11 @@ const Navbar = () => {
           <a href="#contactMe"><section>04.</section>Contact Me!</a>
           <button href="#">Resume</button>
         </div>
-          <a href="javascript:void(0);" className="icon" onClick={myFunction}>
+          <a href="javascript:void(0);" className="icon" onClick={(e) => {
+            e.preventDefault()
+            myFunction()
+            setShowModal(!showModal)
+          }}>
             <icon className="fa fa-bars">&#9776;</icon>
           </a>
       </div>
