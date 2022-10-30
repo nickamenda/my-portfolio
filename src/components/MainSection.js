@@ -16,25 +16,25 @@ const MainSection = () => {
       <div>Over the course of a year I have become proficient with many different skills and languages.</div>
       <div className="aboutMe skills">
         <div className="JS">
-          <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img src={JS}></img></a>
+          <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img src={JS} alt="js logo"></img></a>
         </div>
         <div className="CSS">
-          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noreferrer"><img src={CSS}></img></a>
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noreferrer"><img src={CSS} alt="css logo"></img></a>
         </div>
         <div className="HTML">
-          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noreferrer"><img src={HTML}></img></a>
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noreferrer"><img src={HTML} alt="html logo"></img></a>
         </div>
         <div className="reactImg">
-          <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src={reactImg}></img></a>
+          <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src={reactImg} alt="react logo"></img></a>
         </div>
         <div className="AWS">
-          <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img src={AWS}></img></a>
+          <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img alt="aws logo" src={AWS}></img></a>
         </div>
         <div className="SQL">
-          <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src={SQL}></img></a>
+          <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src={SQL} alt="sql logo"></img></a>
         </div>
         <div className="Mongo">
-          <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src={Mongo}></img></a>
+          <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src={Mongo} alt="mongoDB logo"></img></a>
         </div>
       </div>
     </div>

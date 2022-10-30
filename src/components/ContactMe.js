@@ -10,7 +10,7 @@ const ContactMe = () => {
         <div className="contactInfoLinks">
           <a className="email" href="mailto:nickamenda@gmail.com" target="_blank" rel="noreferrer"><button>Email me!</button></a>
           <a href="https://www.linkedin.com/in/nicholas-amenda-64bb31238/" target="_blank" rel="noreferrer"className="linkedin"><img src={linked} alt="linkedIn logo"></img></a>
-          <a href="https://github.com/nickamenda/SortingAlgoVisual" target="_blank" rel="noreferrer" className="github"><img alt="github logo"src={Github}></img></a>
+          <a href="https://github.com/nickamenda/" target="_blank" rel="noreferrer" className="github"><img alt="github logo"src={Github}></img></a>
 
         </div>
       </div>
