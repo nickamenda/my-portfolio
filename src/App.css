@@ -213,6 +213,10 @@ button {
 }
 .time {
   color: var(--green);
+  padding-top: 15px;
+  margin-bottom: 5px;
+  border-top: 2px solid var(--dark-slate);
+
 }
 .company {
   color: var(--light-slate);
@@ -230,6 +234,7 @@ button {
   font-size: 20px;
   line-height: 1.6;
 }
+
 .projects-container {
   max-width: 750px;
   margin-top: 20px;
