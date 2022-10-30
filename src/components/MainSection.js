@@ -8,7 +8,7 @@ import AWS from '../resources/AWS.png'
 
 const MainSection = () => {
   return (
-    <div className="main">
+    <div className="main hidden">
       <div className="intro">Hi, my name is</div>
       <div className="name">Nick Amenda.</div>
       <div className="info">I create things for the web.</div>

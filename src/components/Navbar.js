@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar" id="myNavbar">
+      <div className="navbar hidden" id="myNavbar" >
         <img className="logo" src={logo}></img>
         <div className="links" id="myLinks">
           <a href="#aboutMe"><section>01.</section>About</a>

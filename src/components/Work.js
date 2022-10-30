@@ -1,11 +1,11 @@
 const Work = () => {
   return (
-    <div id="work">
+    <div id="work" className="hidden">
       <h1 className="work-experiences"><section>03.</section>Work Experience</h1>
       <div className="hack-reactor">
         <section className="time">2022-Present</section>
         <a href="https://www.hackreactor.com/" target="_blank"><h3 className="company">Hack Reactor</h3></a>
-        <div className="work-des" >I decided to transition in to web development just about 1 year ago! Attending Hack Reactor's immersive bootcamp has taught me so many different skills. During this bootcamp we worked solo, in pairs, and also in groups. The schedule was pretty rigorous with classes lasting 11 hours Mon-Fri and 8 hours on Saturday.</div>
+        <div className="work-des" >I decided to transition in to web development just about 1 year ago! Attending Hack Reactor's immersive bootcamp has taught me so many different skills. During this bootcamp we worked solo, in pairs, and also in groups. The schedule was pretty rigorous with classes lasting 11 hours Mon-Fri and 8 hours on Saturday. I now have experience in JS, React, HTML, CSS, AWS, Postgres, MySQL, and MongoDB!</div>
       </div>
       <div className="day-trading">
         <section className="time">2020-2022</section>

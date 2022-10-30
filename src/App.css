@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 html {
@@ -116,13 +117,17 @@ body {
   max-width: 550px;
 }
 
-.navbar button {
+button {
   color: var(--green);
   padding: 10px 15px;
   border-radius: 10%;
   background-color: var(--navy);
   border: 1px solid var(--green);
   transition: .5s ease;
+}
+.email button {
+  padding: 10px 30px;
+
 }
 
 #aboutMe,
@@ -219,8 +224,11 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
-.work-des {
+.work-des,
+.contactInfo {
   color: var(--lightest-slate);
+  font-size: 20px;
+  line-height: 1.6;
 }
 .projects-container {
   max-width: 750px;
@@ -238,6 +246,13 @@ body {
   width: 45px;
   height: auto;
   margin-right: 80px;
+  padding: 4px;
+  border: 0px;
+  transition: .5s ease;
+}
+.contact-container img {
+  width: 45px;
+  height: auto;
   padding: 4px;
   border: 0px;
   transition: .5s ease;
@@ -267,7 +282,8 @@ body {
 .sorting,
 .fec,
 .recastly,
-.csgo {
+.csgo,
+.contact-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -305,6 +321,32 @@ body {
 .icon {
   display: none;
 }
+.contactInfoLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  filter: grayscale(100%);
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  filter: grayscale(0);
+
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
 
 @media only screen and (max-width: 650px) {
   body {
@@ -331,6 +373,9 @@ body {
     margin: 10px;
     display: block;
   }
+  .email button {
+    padding: 10px 10px;
+  }
 
   .about,
   .projects,
@@ -343,7 +388,8 @@ body {
   .sorting,
   .fec,
   .recastly,
-  .csgo {
+  .csgo,
+  .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -369,10 +415,6 @@ body {
   .projects-container a {
     font-size: 35px;
     color: var(--green);
-  }
-
-  .projects-container a:hover {
-    font-size: 35px;
   }
 
 }
@@ -401,9 +443,13 @@ body {
   .logo {
     margin: 0px;
   }
-  .projects-container section img {
+  .projects-container section img,
+  .github img {
     -webkit-filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
     filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
+  }
+  .projectDesc {
+    margin-bottom: 5px;
   }
 }
 
@@ -434,11 +480,14 @@ body {
 
 @media only screen and (min-width: 650px) {
 
-  .navbar a:hover,
-  .navbar button:hover,
-  .logo:hover {
-    transition: .5s ease-in;
+  .navbar a:hover {
+    transition: .5s ease;
     font-size: 25px;
+  }
+  .logo:hover,
+  button:hover {
+    transition: .5s ease;
+    transform: scale(1.4);
   }
 
   button:hover,
@@ -460,11 +509,16 @@ body {
     height: auto;
   }
 
-  .projects-container section img:hover {
+  .projects-container section img:hover,
+  .github img:hover {
     transition: .5s ease;
     transform: scale(1.5);
     -webkit-filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
     filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
+  }
+  .linkedin img:hover {
+    transition: .5s ease;
+    transform: scale(1.5);
   }
 
   .projects-container a:hover,
@@ -484,7 +538,7 @@ body {
     cursor: pointer;
     float: right;
     transform: scale(1.25);
-    transition: .5s ease-in;
+    transition: .5s ease;
   }
 
   .logo:hover {
