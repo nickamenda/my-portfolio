@@ -215,7 +215,6 @@ button {
   color: var(--green);
   padding-top: 15px;
   margin-bottom: 5px;
-  border-top: 2px solid var(--dark-slate);
 
 }
 .company {
@@ -234,7 +233,10 @@ button {
   font-size: 20px;
   line-height: 1.6;
 }
+.work-des {
+  border-bottom: 2px solid var(--dark-slate);
 
+}
 .projects-container {
   max-width: 750px;
   margin-top: 20px;
