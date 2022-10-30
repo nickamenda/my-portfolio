@@ -1,6 +1,5 @@
 import logo from '../resources/Logo.png'
 import React, { useState } from 'react';
-import Modal from './Modal.js'
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false)
