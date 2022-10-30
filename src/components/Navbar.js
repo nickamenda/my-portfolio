@@ -1,8 +1,7 @@
 import logo from '../resources/Logo.png'
-import React, { useState } from 'react';
+import React from 'react';
 
 const Navbar = () => {
-  const [showModal, setShowModal] = useState(false)
   const openMenu = () => {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
@@ -24,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar hidden" id="myNavbar" >
-        <img className="logo" src={logo}></img>
+        <img className="logo" src={logo} alt="my logo"></img>
         <div className="links" id="myLinks">
           <a href="#aboutMe" onClick={() => closeMenu()}><section>01.</section>About</a>
           <a href="#projects" onClick={() => closeMenu()}><section>02.</section>Projects</a>
@@ -32,11 +31,11 @@ const Navbar = () => {
           <a href="#contactMe" onClick={() => closeMenu()}><section>04.</section>Contact Me!</a>
           <button href="#">Resume</button>
         </div>
-          <a href="javascript:void(0);" className="icon" onClick={(e) => {
+          <a href="#" className="icon" onClick={(e) => {
             e.preventDefault()
             openMenu()
           }}>
-            <icon className="fa fa-bars">&#9776;</icon>
+            <div className="fa fa-bars">&#9776;</div>
           </a>
       </div>
     </>

@@ -16,25 +16,25 @@ const MainSection = () => {
       <div>Over the course of a year I have become proficient with many different skills and languages.</div>
       <div className="aboutMe skills">
         <div className="JS">
-          <a href="https://www.javascript.com/" target="_blank"><img src={JS}></img></a>
+          <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img src={JS}></img></a>
         </div>
         <div className="CSS">
-          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src={CSS}></img></a>
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noreferrer"><img src={CSS}></img></a>
         </div>
         <div className="HTML">
-          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src={HTML}></img></a>
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noreferrer"><img src={HTML}></img></a>
         </div>
         <div className="reactImg">
-          <a href="https://reactjs.org/" target="_blank"><img src={reactImg}></img></a>
+          <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src={reactImg}></img></a>
         </div>
         <div className="AWS">
-          <a href="https://aws.amazon.com/" target="_blank"><img src={AWS}></img></a>
+          <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img src={AWS}></img></a>
         </div>
         <div className="SQL">
-          <a href="https://www.mysql.com/" target="_blank"><img src={SQL}></img></a>
+          <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src={SQL}></img></a>
         </div>
         <div className="Mongo">
-          <a href="https://www.mongodb.com/" target="_blank"><img src={Mongo}></img></a>
+          <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src={Mongo}></img></a>
         </div>
       </div>
     </div>
