@@ -5,21 +5,11 @@ body {
 }
 
 html {
-  background-color: var(--light-navy);
-  --dark-navy: #020c1b;
-  --navy: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
-  --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --white: #e6f1ff;
-  --green: #64ffda;
-  --green-tint: rgba(100, 255, 218, 0.1);
-  --pink: #f57dff;
-  --blue: #57cbff;
+  background-color: var(--bone);
+  --bone: #FFFCF2;
+  --light-brown: #403D39;
+  --lightest-brown: #504C47;
+  --orange: #EB5E28;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
@@ -63,7 +53,7 @@ body {
   align-items: flex-start;
   font-size: large;
   margin-top: 5px;
-  color: var(--green);
+  color: var(--orange);
   gap: 25px;
   margin: auto;
   max-width: 750px;
@@ -79,19 +69,19 @@ body {
 }
 
 .logo {
-  color: var(--green);
+  color: var(--orange);
   transition: .5s ease;
 }
 
 .links section {
   display: inline-flex;
   margin-right: 3px;
-  color: var(--green);
+  color: var(--orange);
 }
 
 .links a {
   text-decoration: none;
-  color: var(--light-slate);
+  color: var(--light-brown);
   transition: .5s ease;
 }
 
@@ -100,29 +90,29 @@ body {
 }
 
 .name {
-  color: var(--lightest-slate);
+  color: var(--lightest-brown);
   font-size: 65px;
   transition: .25s ease;
 }
 
 .info {
-  color: var(--light-slate);
+  color: var(--light-brown);
   font-size: 55px;
 }
 
 .description p {
-  color: var(--light-slate);
+  color: var(--light-brown);
   padding: 0;
   margin: 0;
   max-width: 550px;
 }
 
 button {
-  color: var(--green);
+  color: var(--orange);
   padding: 10px 15px;
   border-radius: 10%;
   background-color: var(--navy);
-  border: 1px solid var(--green);
+  border: 1px solid var(--orange);
   transition: .5s ease;
 }
 .email button {
@@ -147,7 +137,7 @@ button {
 .projects section,
 .work-experiences section,
 .contact section {
-  color: var(--green);
+  color: var(--orange);
 }
 
 .about,
@@ -157,12 +147,12 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: var(--light-slate);
+  color: var(--light-brown);
   font-size: 45px;
 }
 
 .aboutMe {
-  color: var(--green);
+  color: var(--orange);
 }
 
 .aboutMe.skills {
@@ -192,7 +182,7 @@ button {
 .aboutMe.intro,
 .aboutMe.exp,
 .projects-container {
-  color: var(--lightest-slate);
+  color: var(--lightest-brown);
   font-size: 18px;
   line-height: 1.6;
 }
@@ -203,7 +193,7 @@ button {
 
 
 .projects-intro {
-  color: var(--lightest-slate);
+  color: var(--lightest-brown);
   max-width: 750px;
   font-size: 20px;
   line-height: 1.6;
@@ -212,13 +202,13 @@ button {
   gap: 20px;
 }
 .time {
-  color: var(--green);
+  color: var(--orange);
   padding-top: 15px;
   margin-bottom: 5px;
 
 }
 .company {
-  color: var(--light-slate);
+  color: var(--light-brown);
   font-size: 35px;
   font-weight: bold;
   margin-top: 5px;
@@ -229,7 +219,7 @@ button {
 }
 .work-des,
 .contactInfo {
-  color: var(--lightest-slate);
+  color: var(--lightest-brown);
   font-size: 20px;
   line-height: 1.6;
 }
@@ -270,7 +260,7 @@ button {
 .projects-container a {
   font-size: 38px;
   font-weight: bold;
-  color: var(--lightest-slate);
+  color: var(--lightest-brown);
   text-decoration: underline;
   transition: .5s ease;
 }
@@ -281,7 +271,7 @@ button {
 }
 
 .projects-container p {
-  color: var(--lightest-slate);
+  color: var(--lightest-brown);
   font-size: 20px;
   line-height: 1.2;
 }
@@ -421,7 +411,7 @@ button {
 
   .projects-container a {
     font-size: 35px;
-    color: var(--green);
+    color: var(--orange);
   }
 
 }
@@ -443,7 +433,7 @@ button {
   .navbar a.icon {
     float: right;
     display: flex;
-    color: var(--green);
+    color: var(--orange);
     font-size: 40px;
   }
 
@@ -452,8 +442,8 @@ button {
   }
   .projects-container section img,
   .github img {
-    -webkit-filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
-    filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
+    -webkit-filter: drop-shadow(1.5px 1.5px 0 var(--orange)) drop-shadow(-1.5px -1.5px 0 var(--orange));
+    filter: drop-shadow(1.5px 1.5px 0 var(--orange)) drop-shadow(-1.5px -1.5px 0 var(--orange));
   }
   .projectDesc {
     margin-bottom: 5px;
@@ -476,7 +466,7 @@ button {
     top: 75px;
     gap: 35px;
     transition: .5s ease;
-    border: 1px solid var(--green);
+    border: 1px solid var(--orange);
     width: 75px;
     z-index: 2;
   }
@@ -521,8 +511,8 @@ button {
   .github img:hover {
     transition: .5s ease;
     transform: scale(1.5);
-    -webkit-filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
-    filter: drop-shadow(1.5px 1.5px 0 var(--green)) drop-shadow(-1.5px -1.5px 0 var(--green));
+    -webkit-filter: drop-shadow(1.5px 1.5px 0 var(--orange)) drop-shadow(-1.5px -1.5px 0 var(--orange));
+    filter: drop-shadow(1.5px 1.5px 0 var(--orange)) drop-shadow(-1.5px -1.5px 0 var(--orange));
   }
   .linkedin img:hover {
     transition: .5s ease;
@@ -533,7 +523,7 @@ button {
   .company:hover {
     font-size: 45px;
     font-weight: bold;
-    color: var(--green);
+    color: var(--orange);
     text-decoration: underline;
     transition: .25s ease;
   }
@@ -560,7 +550,7 @@ button {
     transform: scale(2);
     transform-origin: 0%;
     transition: .5s ease;
-    color: var(--green);
+    color: var(--orange);
   }
 
 
