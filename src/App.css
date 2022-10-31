@@ -17,6 +17,11 @@ html {
 body {
   animation: transistionIn 1.5s;
 }
+footer {
+  padding-top: 50px;
+  text-align: center;
+  color: var(--orange);
+}
 
 @keyframes transistionIn {
   from {

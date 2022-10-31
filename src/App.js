@@ -34,6 +34,7 @@ function App() {
       <Projects />
       <Work />
       <ContactMe />
+      <footer className="hidden">Created and designed by Nick Amenda</footer>
     </div>
   );
 }
