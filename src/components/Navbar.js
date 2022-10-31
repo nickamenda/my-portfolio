@@ -30,7 +30,7 @@ const Navbar = () => {
           <a href="#projects" onClick={() => closeMenu()}><section>02.</section>Projects</a>
           <a href="#work" onClick={() => closeMenu()}><section>03.</section>Work</a>
           <a href="#contactMe" onClick={() => closeMenu()}><section>04.</section>Contact Me!</a>
-          <a className="resume" href={Resume} target="_blank" rel="noreferrer">Resume</a>
+          <a className="resume" href={Resume} target="_blank" rel="noreferrer" onClick={() => closeMenu()}>Resume</a>
         </div>
           <a href="#" className="icon" onClick={(e) => {
             e.preventDefault()
