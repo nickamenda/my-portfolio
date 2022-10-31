@@ -1,4 +1,4 @@
-import logo from '../resources/Logo.png'
+import logo from '../resources/Logo-light.png'
 import React from 'react';
 
 const Navbar = () => {
