@@ -413,7 +413,9 @@ button {
     font-size: 35px;
     color: var(--orange);
   }
-
+  .company {
+    color: var(--orange);
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -459,7 +461,7 @@ button {
   .links.responsive {
     display: flex;
     flex-direction: column;
-    background-color: var(--dark-navy);
+    background-color: var(--light-brown);
     padding: 20px;
     position: absolute;
     right: 0px;
@@ -473,6 +475,7 @@ button {
 
   .links.responsive a {
     display: flex;
+    color: var(--bone);
   }
 }
 
