@@ -1,5 +1,6 @@
 import logo from '../resources/Logo-light.png'
 import React from 'react';
+import Resume from '../resources/Nick Amenda Resume.pdf'
 
 const Navbar = () => {
   const openMenu = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
           <a href="#projects" onClick={() => closeMenu()}><section>02.</section>Projects</a>
           <a href="#work" onClick={() => closeMenu()}><section>03.</section>Work</a>
           <a href="#contactMe" onClick={() => closeMenu()}><section>04.</section>Contact Me!</a>
-          <button href="#">Resume</button>
+          <a className="resume" href={Resume} target="_blank" rel="noreferrer">Resume</a>
         </div>
           <a href="#" className="icon" onClick={(e) => {
             e.preventDefault()

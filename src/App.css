@@ -107,7 +107,8 @@ body {
   max-width: 550px;
 }
 
-button {
+button,
+.resume {
   color: var(--orange);
   padding: 10px 15px;
   border-radius: 10%;
@@ -422,10 +423,6 @@ button {
   .navbar {
     justify-content: space-between;
     align-items: center;
-  }
-
-  .navbar button {
-    display: none;
   }
 
   .navbar a {
