@@ -344,6 +344,9 @@ button,
   filter: grayscale(0);
 
 }
+.main a {
+  text-decoration: none;
+}
 
 @media(prefers-reduced-motion) {
   .hidden {

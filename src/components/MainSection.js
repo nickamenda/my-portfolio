@@ -5,12 +5,13 @@ import Mongo from '../resources/Mongo.png'
 import JS from '../resources/JS.png'
 import HTML from '../resources/HTML.png'
 import AWS from '../resources/AWS.png'
+import Resume from '../resources/Nick Amenda Resume.pdf'
 
 const MainSection = () => {
   return (
     <div className="main hidden">
       <div className="intro">Hi, my name is</div>
-      <div className="name">Nick Amenda.</div>
+      <a href={Resume} target="_blank"><div className="name">Nick Amenda.</div></a>
       <div className="info">I create things for the web.</div>
       <div className="description"><p>I am a passionate full-stack software engineer who specializes in building amazing every day experiences for people who use the internet! I truly enjoy making the internet seamless for the end-user.</p> </div>
       <div>Over the course of a year I have become proficient with many different skills and languages.</div>
