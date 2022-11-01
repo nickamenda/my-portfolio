@@ -9,12 +9,12 @@ const Projects = () => {
       <div className="projects-intro"><p>While attending the Hack Reactor bootcamp, I worked on many different projects whether it be solo, in pairs or in larger groups of 3-4. I have also worked on quite a few personal projects. Below are some of the projects I have worked on, I would love for you to check them out!</p></div>
       <li className="projects-container">
         <ul>
-          <section><a href="./sortingalgo" target="_blank" rel="noreferrer">Sorting Algorithm Visualizer</a>
+          <section><a href="./sortingalgo">Sorting Algorithm Visualizer</a>
               <a href="https://github.com/nickamenda/SortingAlgoVisual" target="_blank" rel="noreferrer"><img className="github" src={Github}alt="Github logo"></img></a>
           </section>
           <div className="sorting">
             <div className="projectDesc">This is a personal project I worked on with one of my good friends. This visualizer creates a visual depiction of 4 different sorting algorithms. We used a mix of HTML, CSS, and JS to build this visualizer. There are options to change the speed of the algorithm, input how many bars you want shown, and what algorithm you would like to see. Please, feel free to give it a try!</div>
-            <a href="./sortingalgo" target="_blank" rel="noreferrer"><img src={sorting} className="sortingSS" alt="Screenshot of my sorting visualizer"></img></a>
+            <a href="./sortingalgo"><img src={sorting} className="sortingSS" alt="Screenshot of my sorting visualizer"></img></a>
           </div>
         </ul>
         <ul>
