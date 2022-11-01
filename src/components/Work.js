@@ -10,7 +10,7 @@ const Work = () => {
       <div className="day-trading">
         <section className="time">2020-2022</section>
         <a href="https://en.wikipedia.org/wiki/Day_trading" target="_blank" rel="noreferrer"><h3 className="company">Day Trading</h3></a>
-        <div className="work-des">Once leaving my past job I started to work as a proffesional day trader. This job taught me lots of skills about accountabilty and how to deal with high-stress situations. Since starting the economy has taken quite a hit and the stock market is no longer as stable as it once was. test</div>
+        <div className="work-des">Once leaving my past job I started to work as a proffesional day trader. This job taught me lots of skills about accountabilty and how to deal with high-stress situations. Since starting the economy has taken quite a hit and the stock market is no longer as stable as it once was.</div>
       </div>
       <div className="christofferson">
         <section className="time">2017-2020</section>
