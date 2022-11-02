@@ -11,10 +11,10 @@ const MainSection = () => {
   return (
     <div className="main hidden">
       <div className="intro">Hi, my name is</div>
-      <a href={Resume} target="_blank"><div className="name">Nick Amenda.</div></a>
+      <a href={Resume} target="_blank" rel="noreferrer"><div className="name">Nick Amenda.</div></a>
       <div className="info">I create things for the web.</div>
-      <div className="description"><p>I am a passionate full-stack software engineer who specializes in building amazing every day experiences for people who use the internet! I truly enjoy making the internet seamless for the end-user.</p> </div>
-      <div>Over the course of a year I have become proficient with many different skills and languages.</div>
+      <div className="description"><p>I am a passionate full-stack software engineer who truly enjoys making the internet seamless for the end-user. I am currently attending Hack Reactors immersive bootcamp and will be graduating in early December 2022.</p> </div>
+      <div>I am proficient with many different skills and languages. Heres a few examples!</div>
       <div className="aboutMe skills">
         <div className="JS">
           <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img src={JS} alt="js logo"></img></a>
