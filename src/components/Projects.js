@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div id="projects" className="hidden">
       <h1 className="projects"><section>02.</section>Projects</h1>
-      <div className="projects-intro"><p>While attending Hack Reactor's bootcamp, I have worked on many different projects whether it be solo, in pairs or in large groups. I have also worked on quite a few personal projects when I have some spare time. Below are just a couple of the projects I have worked on, I would love for you to check them out!</p></div>
+      <div className="projects-intro"><p>While attending Hack Reactor's bootcamp, I have worked on many different projects whether it be solo, in pairs or in large groups. I have also worked on quite a few personal projects when I have some spare time. Below are just a couple  of the projects I have worked on, I would love for you to check them out!</p></div>
       <li className="projects-container">
         <ul>
           <section><a href="./sortingalgo">Sorting Algorithm Visualizer</a>

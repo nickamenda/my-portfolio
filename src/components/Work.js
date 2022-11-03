@@ -10,12 +10,12 @@ const Work = () => {
       <div className="day-trading">
         <section className="time">2020-2022</section>
         <a href="https://en.wikipedia.org/wiki/Day_trading" target="_blank" rel="noreferrer"><h3 className="company">Day Trading</h3></a>
-        <div className="work-des">Once leaving my past job I started to work as a proffesional day trader. This job taught me a lot of different skills like, accountabilty and how to deal with high-stress situations. Since starting, the economy has taken quite a hit and the stock market is no longer as stable as it once was.</div>
+        <div className="work-des">Once leaving my past job I started work as a proffesional day trader. While in this field I gained experience in having full accountabilty of my work, making quick decisions under immense pressure, and dealing with stress when faced with constantly changing conditions.</div>
       </div>
       <div className="christofferson">
         <section className="time">2017-2020</section>
         <a href="https://www.christoffersonmoving.com/" target="_blank" rel="noreferrer"><h3 className="company">Christofferson Moving and Storage</h3></a>
-        <div className="work-des">I worked as a proffesional mover for about 3 years, I learned many skills from this job including proper customer service, powering through when tired, and how to stay positive when placed in a bad situation. Once Covid-19 hit not too many people were moving or wanted people in their house so I had to move on and find something with more stable hours.</div>
+        <div className="work-des">I worked as a professional mover for about 3 years, I learned many skills from this job including proper customer service, powering through when tired, and how to stay positive when placed in a bad situation.</div>
       </div>
     </div>
   )
