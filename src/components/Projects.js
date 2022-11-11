@@ -1,6 +1,7 @@
 import sorting from '../resources/Sorting.png'
 import fec from '../resources/Fec.png'
 import Github from '../resources/Github.png'
+import marina from '../resources/marina.png'
 
 const Projects = () => {
   return (
@@ -8,6 +9,22 @@ const Projects = () => {
       <h1 className="projects"><section>02.</section>Projects</h1>
       <div className="projects-intro"><p>While attending Hack Reactor's bootcamp, I have worked on many different projects whether it be solo, in pairs or in large groups. I have also worked on quite a few personal projects when I have some spare time. Below are just a couple  of the projects I have worked on, I would love for you to check them out!</p></div>
       <li className="projects-container">
+        <ul>
+          <section><a href="https://beautybymarinam.com"  target="_blank" rel="noreferrer" className="marina-site-title">BeautyByMarinaM</a>
+          </section>
+          <div className="marina-site">
+            <div className="projectDesc">This is a multi-page website I was contracted to build from scratch given only a few inspiration websites. The website is fully responsive so it will look great on any device! I used React, React-Router, CSS, HTML, Vite, and AWS to complete this. The main purpose of this site is to attract more customers and have a more professional and personal feel than just having a page on the company site. Click on the title or image to be brought to the hompage.</div>
+            <a href="https://beautybymarinam.com"  target="_blank" rel="noreferrer"><img src={marina} className="marinaSS" alt="Screenshot of beauty by marina m website."></img></a>
+          </div>
+        </ul>
+        <ul>
+          <section><a href="https://github.com/Koopa-Kingdom/QA-Api">System Design Capstone</a>
+          <a href="https://github.com/Koopa-Kingdom/QA-Api" target="_blank" rel="noreferrer"><img className="github" src={Github}alt="Github logo"></img></a>
+          </section>
+          <div className="sdc">
+            <div className="projectDesc">This was a group project we worked on while attending Hack Reactor. Our team was tasked with building a fully functional RESTful API and deploying it using AWS. We were given multiple CSV files with 15+ million data entries and had to import the data, transform the resulting data using queries, optimize our queries, and eventually deploy the API to AWS. I was able to stress test the API using Loader.io and it performed very well, being able to withstand over 15,000 requests every 15 seconds. During this project we got more experience with Postgres, PGAdmin, AWS, git workflow, K6, and Loader.io. Click the project title or Github icon to be brought to the Github repo.</div>
+          </div>
+        </ul>
         <ul>
           <section><a href="./sortingalgo">Sorting Algorithm Visualizer</a>
               <a href="https://github.com/nickamenda/SortingAlgoVisual" target="_blank" rel="noreferrer"><img className="github" src={Github}alt="Github logo"></img></a>

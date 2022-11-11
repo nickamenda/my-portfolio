@@ -13,7 +13,7 @@ const MainSection = () => {
       <div className="intro">Hi, my name is</div>
       <a href={Resume} target="_blank" rel="noreferrer"><div className="name">Nick Amenda.</div></a>
       <div className="info">I create things for the web.</div>
-      <div className="description"><p>I am a passionate full-stack software engineer who truly enjoys making the internet seamless for the end-user. I am currently attending Hack Reactors immersive bootcamp and will be graduating in early December 2022.</p> </div>
+      <div className="description"><p>I am a passionate full-stack software engineer who truly enjoys making the internet seamless for the end-user. I am currently attending Hack Reactor's Immersive bootcamp and will be graduating in early December 2022.</p> </div>
       <div>I am proficient with many different skills and languages. Here are a few examples!</div>
       <div className="aboutMe skills">
         <div className="JS">

@@ -286,7 +286,8 @@ button,
 .fec,
 .recastly,
 .csgo,
-.contact-container {
+.contact-container,
+.marina-site {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -297,7 +298,8 @@ button,
 .fecSS,
 .recastlySS,
 .csgoSS,
-.photo {
+.photo,
+.marinaSS {
   object-fit: cover;
   width: 215px;
   height: 215px;
@@ -395,7 +397,8 @@ button,
   .fec,
   .recastly,
   .csgo,
-  .contact-container {
+  .contact-container,
+  .marina-site {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,7 +429,11 @@ button,
     color: var(--orange);
   }
 }
-
+@media only screen and (max-width: 300px) {
+  .marina-site-title {
+    word-wrap: break-word;
+  }
+}
 @media screen and (max-width: 650px) {
   .navbar {
     justify-content: space-between;
@@ -540,7 +547,8 @@ button,
   .fecSS:hover,
   .recastlySS:hover,
   .csgoSS:hover,
-  .photo:hover {
+  .photo:hover,
+  .marinaSS:hover {
     cursor: pointer;
     float: right;
     transform: scale(1.25);
